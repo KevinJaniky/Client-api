@@ -1,0 +1,55 @@
+{
+  "static": {
+    "urls": {
+      "/index.html": "22c649efeacdef5191a3479a32b57d885a47ef85",
+      "/system-config.js": "773069e4ed8ac81f7b8c7d291d2b0ee3c5159a1d",
+      "/worker-basic.js": "49442bd19471fe1e3c45014aab46411938ef02fa",
+      "/tsconfig.json": "8a7b13481e066990e7d0f120fc2effdedb04eced",
+      "/app\\app-routing.module.js": "c36262efc1d1ec0fe42f7c1210e1bd16048bc8c8",
+      "/app\\app.component.css": "0b7f0d69cf95cfb22c5f0c211aa49b768b659fdb",
+      "/app\\app.component.html": "adbf5f8524f7b63ebda4790401601a2ba8f497e4",
+      "/app\\app.component.js": "384a3023ef03d724106e4192fb67d5d22b58392b",
+      "/app\\app.module.js": "0f9c8ef5b4a3ce7a721f21bcb6625ac575b2f075",
+      "/app\\i18n.providers.js": "5988192156d3b29bec72cc68638caae07084674a",
+      "/app\\main.js": "f0e37177399374f6a77f994718101d488b0b15df",
+      "/app\\operators.js": "4a2c6b9a55d5d2dbf3d0879ef69cdd1d3218501b",
+      "/assets\\data.json": "d475bb8655182da59fd90cab4480d6b1e873d59b",
+      "/css\\main.css": "848a66d607e000245ccdc4774f795c8ad0692942",
+      "/app\\about\\about-routing.module.js": "9593a3d4508b6100bfc9042ad30391f65764dd20",
+      "/app\\about\\about.component.css": "a2cf129119331cec6eeea6c884bd57b0778e120d",
+      "/app\\about\\about.component.html": "63762d2036c64e231fe9ba49f8184fdd6029eac8",
+      "/app\\about\\about.component.js": "28a39c126fc12eab856dda00bb80c1d1f9d39c86",
+      "/app\\about\\about.module.js": "81ef68aa43b3e6ad7bf92625e37c6ad4c633a3a4",
+      "/app\\home\\home-routing.module.js": "82d8e295ea705a27938682879980f8000f3fc844",
+      "/app\\home\\home.component.css": "84c7840c70680b3359dee7cdde3a21338ba10b93",
+      "/app\\home\\home.component.html": "df49a953b8b480333b7e04c0f8357e1fa7c23055",
+      "/app\\home\\home.component.js": "08c2d1cf1b37d7c2a623117bad80d3f97d5ee9f3",
+      "/app\\home\\home.module.js": "a5949fe1bc8a4d25de938a7705346f34569b2832",
+      "/app\\shared\\apiservices.module.js": "2e8aaef182185ed61cca73e426102a56b4ed4bd7",
+      "/app\\shared\\shared.module.js": "d585e377d64284754861289ce4d9f35b83ede169",
+      "/assets\\favicon\\favicon-DEV.ico": "aa4fb0706ed367fb5c2fd6bd2b058c0dce8cc785",
+      "/assets\\favicon\\favicon-PROD.ico": "5d40a29d26398292f08a46b26f6788ec60f5f43e",
+      "/assets\\svg\\more.svg": "f0ebcdcc3d9f8f58ef7be95a3498229ec55e8eb6",
+      "/app\\shared\\config\\env.config.js": "8ea42c011c7703f2665c31e0e3dccb7f59cd730a",
+      "/app\\shared\\name-list\\name-list.service.js": "1593d04bf37d4c72906351e464a765d32043a967",
+      "/app\\shared\\toolbar\\toolbar.component.css": "7d58a49887e011b65fda628ec17f22ca7d688ecc",
+      "/app\\shared\\toolbar\\toolbar.component.html": "d530b1ef344a32fc8ad5cad962c3bc6223e7df21",
+      "/app\\shared\\toolbar\\toolbar.component.js": "eb7d7bf9ce0c46980742614630a559af471be7e7",
+      "/app\\shared\\navbar\\navbar.component.css": "24b173806ff1686d2c0d78b536419b2c675c6f5e",
+      "/app\\shared\\navbar\\navbar.component.html": "c7948fbadf3271781dc5b523a321d26552077ef5",
+      "/app\\shared\\navbar\\navbar.component.js": "6a16fa6afd0ef4a638acc8862eb914c2616c5da6"
+    }
+  },
+  "routing": {
+    "index": "/index.html",
+    "routes": {
+      "/": {
+        "prefix": false
+      }
+    }
+  },
+  "push": {
+    "showNotifications": true,
+    "backgroundOnly": false
+  }
+}
