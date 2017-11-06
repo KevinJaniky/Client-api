@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
-const URL = "http://localhost/api/wp-json/wp/v2";
+const URL = "https://jsonplaceholder.typicode.com";
 
 @Injectable()
 export class ApiService{

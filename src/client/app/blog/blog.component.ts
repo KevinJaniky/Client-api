@@ -1,22 +1,22 @@
-import {Component, OnInit} from '@angular/core';
-import {NameListService} from '../shared/name-list/name-list.service';
-import {ApiService} from '../shared/apiservices.module';
+import { Component, OnInit } from '@angular/core';
+import { NameListService } from '../shared/name-list/name-list.service';
+import { ApiService } from '../shared/apiservices.module';
+
 /**
  * This class represents the lazy loaded HomeComponent.
  */
 @Component({
     moduleId: module.id,
-    selector: 'sd-home',
-    templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css'],
+    selector: 'sd-blog',
+    templateUrl: 'blog.component.html',
+    styleUrls: ['blog.component.css'],
     providers: [ApiService]
 })
-export class HomeComponent implements OnInit {
+export class BlogComponent implements OnInit {
 
     newName: string = '';
     errorMessage: string;
     names: any[] = [];
-    prestations: any[];
     articles: any[];
 
     /**
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
         //this.api.get('/prestations?per_page=6').subscribe((data) => this.prestations = data);
         //this.api.get('/posts?per_page=6').subscribe((data) => this.articles = data);
-        this.api.get('/users').subscribe((data) => this.articles = data);
+        this.api.get('/posts').subscribe((data) => this.articles = data);
     }
 
 
