@@ -1,17 +1,16 @@
 import { Injectable } from '@angular/core';
-import {Http} from '@angular/http';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-const URL = "https://jsonplaceholder.typicode.com";
+const URL = 'http://localhost/api/wp-json/types';
 
 @Injectable()
-export class ApiService{
+export class ApiService {
 
-    constructor(public http: Http){ }
+    constructor(public http: Http) { }
 
-    get(path: string){
-        return this.http.get(URL+path)
-            .map(res => res.json())
+    get(type: string,path: string) {
+        return this.http.get(URL+type+path)
+            .map(res => res.json());
     }
-
 }

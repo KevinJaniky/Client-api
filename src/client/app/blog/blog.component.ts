@@ -34,7 +34,7 @@ export class BlogComponent implements OnInit {
     ngOnInit() {
         //this.api.get('/prestations?per_page=6').subscribe((data) => this.prestations = data);
         //this.api.get('/posts?per_page=6').subscribe((data) => this.articles = data);
-        this.api.get('/posts').subscribe((data) => this.articles = data);
+        this.api.get('/content','/articles').subscribe((data) => this.articles = data);
     }
 
 
