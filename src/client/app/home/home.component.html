@@ -1,8 +1,28 @@
+<div class="home">
+    <div class="prestation">
+        <div *ngFor="let prestation of prestations">
+            <a href="{{prestation.link}}" target="_blank">
+                <div class="imager_container">
+                    <img src="{{ prestation.img }}">
+                </div>
+                <div class="title_container">
+                    <h2>{{ prestation.title }}</h2>
+                </div>
+                <div class="description_container">
+                    <p>{{ prestation.price }} €</p>
+                </div>
+            </a>
+        </div>
 
+    </div>
+
+</div>
+
+
+<ul>
+    <li *ngFor="let prestation of prestations">{{ prestation | json }}</li>
+</ul>
 
 <ul>
     <li *ngFor="let article of articles">{{ article | json }}</li>
-</ul>
-<ul>
-    <li *ngFor="let prestation of prestations">{{ prestation | json }}</li>
 </ul>

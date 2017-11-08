@@ -1,7 +1,7 @@
 {
   "static": {
     "urls": {
-      "/index.html": "237d06ab0679568205a276683dea89e532e7f97a",
+      "/index.html": "6b2d1fc835dbca319b0ed2a70e04b837d8ee4076",
       "/system-config.js": "8a919b21ab058814fd634493bc4fd12e8b694130",
       "/tsconfig.json": "01d78708810a90666fbaf14a191bd71c2780f381",
       "/worker-basic.js": "49442bd19471fe1e3c45014aab46411938ef02fa",
@@ -37,7 +37,7 @@
       "/app/contact/contact.module.js": "a7adca6d3f574e7ca48bb91573aa29185f483ee3",
       "/app/home/home-routing.module.js": "78758d9bfe373cb6fdc69aedb4d813de17539360",
       "/app/home/home.component.css": "e1793b83555414ab700dba600fc45ae72ce63c42",
-      "/app/home/home.component.html": "26897658ab83394b4c10adf7cc279fd655b82bd4",
+      "/app/home/home.component.html": "8db660f1f7c7ba8bdd5b2374af8b0df8cd1553a4",
       "/app/home/home.component.js": "13fea6fb816f0346f3b8b100428ac2aafa41fed0",
       "/app/home/home.module.js": "70f5dd17933b712edb3a4a2c2d4e060cb1da6ec8",
       "/app/shared/apiservices.module.js": "949b4225bb5430bca35f0a3719070c9502687b31",
@@ -51,10 +51,10 @@
       "/assets/favicon/favicon-PROD.ico": "5d40a29d26398292f08a46b26f6788ec60f5f43e",
       "/assets/svg/more.svg": "9838cd822e0f989a0befbd365365ee2751bbdebc",
       "/app/shared/config/env.config.js": "88ea48a5526978e1925941e770ebc1144cd624d3",
-      "/app/shared/name-list/name-list.service.js": "6e48d1e892561ecf80f94f342c4b34cd38e4793b",
       "/app/shared/navbar/navbar.component.css": "ca29d0de0b312a878cc550aff78ec0db31750dda",
       "/app/shared/navbar/navbar.component.html": "ea330e76e227046085bf44ad0d4a35e377c56acf",
       "/app/shared/navbar/navbar.component.js": "da5971f67511ce7bf199e317445a1fe5c75bdc55",
+      "/app/shared/name-list/name-list.service.js": "6e48d1e892561ecf80f94f342c4b34cd38e4793b",
       "/app/shared/toolbar/toolbar.component.css": "3f1d3613b63747784feb4260941ee2b87d50f2ff",
       "/app/shared/toolbar/toolbar.component.html": "ad9a7e5c07dd27a8be9e1a14f1ed57de310d40e8",
       "/app/shared/toolbar/toolbar.component.js": "50c9d4d2478dfb235361950d9f33cfa89b96d175"
