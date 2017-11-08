@@ -365,7 +365,7 @@ Forks of this project demonstrate how to extend and integrate with other librari
 │       │   │   ├── home.component.spec.ts
 │       │   │   ├── home.component.ts
 │       │   │   ├── home.module.ts
-│       │   │   └── home-routing.module.ts
+│       │   │   └── ventes-routing.module.ts
 │       │   ├── i18n.providers.ts
 │       │   ├── main-prod.ts
 │       │   ├── main.ts

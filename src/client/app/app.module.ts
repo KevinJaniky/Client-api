@@ -9,10 +9,13 @@ import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
 import { SharedModule } from './shared/shared.module';
+import {BlogPageModule} from "./blog-page/blog-page.module";
+import {VentesModule} from "./ventes/ventes.module";
+import {ContactModule} from "./contact/contact.module";
 
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, BlogModule, SharedModule.forRoot()],
+  imports: [BrowserModule, HttpModule, AppRoutingModule, AboutModule, HomeModule, BlogModule, BlogPageModule, VentesModule, ContactModule, SharedModule.forRoot()],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,

@@ -17,6 +17,10 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import {ContactComponent} from "./contact/contact.component";
+import {VentesComponent} from "./ventes/ventes.component";
+import {BlogComponent} from "./blog/blog.component";
+import {BlogPageComponent} from "./blog-page/blog-page.component";
 
 export function main() {
 
@@ -24,7 +28,11 @@ export function main() {
 
     let config: Route[] = [
       { path: '', component: HomeComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'ventes', component: VentesComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'blog/:id', component: BlogPageComponent },
     ];
     beforeEach(() => {
       TestBed.configureTestingModule({

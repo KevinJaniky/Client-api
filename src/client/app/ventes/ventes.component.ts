@@ -6,18 +6,17 @@ import { ApiService } from '../shared/apiservices.module';
  */
 @Component({
     moduleId: module.id,
-    selector: 'sd-home',
-    templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css'],
+    selector: 'sd-ventes',
+    templateUrl: 'ventes.component.html',
+    styleUrls: ['ventes.component.css'],
     providers: [ApiService]
 })
-export class HomeComponent implements OnInit {
+export class VentesComponent implements OnInit {
 
     newName: string = '';
     errorMessage: string;
     names: any[] = [];
     prestations: any[];
-    articles: any[];
     /**
      * Creates an instance of the HomeComponent with the injected
      * NameListService.
@@ -31,9 +30,7 @@ export class HomeComponent implements OnInit {
      * Get the names OnInit
      */
     ngOnInit() {
-        this.api.get('/content','/prestations/per_page/6').subscribe((data) => this.prestations = data);
-        this.api.get('/content','/articles/per_page/6').subscribe((data) => this.articles = data);
-
+       this.api.get('/content','/prestations/per_page/6').subscribe((data) => this.prestations = data);
     }
 
 
