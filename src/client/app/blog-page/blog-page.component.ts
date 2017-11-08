@@ -20,7 +20,7 @@ export class BlogPageComponent implements OnInit {
     errorMessage: string;
     names: any[] = [];
     articles: any[];
-    path: string
+    path: string;
     /**
      * Creates an instance of the HomeComponent with the injected
      * NameListService.
