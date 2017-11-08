@@ -1,0 +1,92 @@
+h2 {
+  background: #ed653c;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase; }
+
+.navbar {
+  border: 0 solid #e1e1e1;
+  border-bottom-width: 1px;
+  display: block;
+  padding: 10px 25px;
+  box-shadow: 0 0 20px 0 #626262;
+  z-index: 9999;
+  position: relative; }
+  .navbar a {
+    color: #8f8f8f;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-right: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer; }
+    .navbar a.router-link-active {
+      color: #106cc8; }
+
+.header {
+  background: url(../../assets/image/header.jpg) center;
+  background-size: cover;
+  height: 700px; }
+  .header .applat {
+    width: 100%;
+    height: 100%;
+    background: rgba(237, 101, 76, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .applat .content {
+      text-align: center;
+      color: white; }
+      .header .applat .content p {
+        margin: 0;
+        line-height: inherit; }
+        .header .applat .content p.nom {
+          font-size: 50px;
+          text-transform: uppercase;
+          font-weight: bold; }
+        .header .applat .content p.poste_1 {
+          font-size: 34px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #ed653c; }
+        .header .applat .content p.poste_2 {
+          font-size: 23px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #ed653c; }
+
+.home .prestation {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap; }
+  .home .prestation > .item {
+    flex: 1;
+    max-width: 350px;
+    margin: 0 50px;
+    box-shadow: 5px 5px 20px 0 #b7b7b7; }
+    .home .prestation > .item a {
+      text-decoration: none;
+      color: #2c2c2c; }
+      .home .prestation > .item a .imager_container {
+        border-bottom: 8px solid #ed653c; }
+        .home .prestation > .item a .imager_container img {
+          width: 100%;
+          height: 250px;
+          vertical-align: bottom; }
+      .home .prestation > .item a .title_container {
+        padding: 5px 15px; }
+        .home .prestation > .item a .title_container h3 {
+          text-transform: uppercase;
+          letter-spacing: -0.9px;
+          text-align: center;
+          font-weight: bold;
+          color: #2c2c2c; }
+      .home .prestation > .item a .description_container {
+        padding: 0 30px; }
+        .home .prestation > .item a .description_container p {
+          color: #2c2c2c;
+          text-align: justify;
+          line-height: 27px; }

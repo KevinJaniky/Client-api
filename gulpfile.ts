@@ -1,7 +1,7 @@
 import * as gulp from 'gulp';
 import * as util from 'gulp-util';
 import * as runSequence from 'run-sequence';
-
+import * as sass from 'gulp-sass';
 
 import Config from './tools/config';
 import { loadCompositeTasks, loadTasks } from './tools/utils';
@@ -23,4 +23,11 @@ gulp.task('clean.once', (done: any) => {
     util.log('Skipping clean on rebuild');
     done();
   }
+});
+
+
+gulp.task('sass', function() {
+  gulp.src('./src/client/assets/scss/import.scss')
+      .pipe(sass().on('error', sass.logError))
+      .pipe(gulp.dest('./dist/dev/css/'));
 });

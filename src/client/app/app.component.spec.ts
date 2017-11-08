@@ -21,6 +21,7 @@ import {ContactComponent} from "./contact/contact.component";
 import {VentesComponent} from "./ventes/ventes.component";
 import {BlogComponent} from "./blog/blog.component";
 import {BlogPageComponent} from "./blog-page/blog-page.component";
+import {HeaderComponent} from "./shared/header/header.component";
 
 export function main() {
 
@@ -39,7 +40,9 @@ export function main() {
         imports: [FormsModule, RouterTestingModule.withRoutes(config)],
         declarations: [TestComponent, ToolbarComponent,
           NavbarComponent, AppComponent,
-          HomeComponent, AboutComponent],
+          HomeComponent, AboutComponent,
+          HeaderComponent
+        ],
         providers: [
           { provide: APP_BASE_HREF, useValue: '/' }
         ]

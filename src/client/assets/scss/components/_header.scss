@@ -1,0 +1,38 @@
+.header {
+  background: url(../../assets/image/header.jpg) center;
+  background-size: cover;
+  height: 700px;
+  .applat {
+    width: 100%;
+    height: 100%;
+    background: $color_applat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      text-align: center;
+      color: white;
+      p {
+        margin: 0;
+        line-height: inherit;
+        &.nom {
+          font-size: 50px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        &.poste_1{
+          font-size: 34px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $color;
+        }
+        &.poste_2{
+          font-size: 23px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $color;
+        }
+      }
+    }
+  }
+}

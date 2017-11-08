@@ -8,7 +8,6 @@ import { ApiService } from '../shared/apiservices.module';
     moduleId: module.id,
     selector: 'sd-home',
     templateUrl: 'home.component.html',
-    styleUrls: ['home.component.css'],
     providers: [ApiService]
 })
 export class HomeComponent implements OnInit {
