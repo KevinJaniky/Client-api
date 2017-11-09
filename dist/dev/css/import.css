@@ -6,30 +6,49 @@ h2 {
   color: white;
   text-transform: uppercase; }
 
+.btn-see-more {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 40px;
+  display: block;
+  margin: 20px auto;
+  height: inherit;
+  background: #ed653c; }
+  .btn-see-more:hover {
+    background: rgba(237, 101, 60, 0.78); }
+
 .navbar {
   border: 0 solid #e1e1e1;
   border-bottom-width: 1px;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   padding: 10px 25px;
   box-shadow: 0 0 20px 0 #626262;
   z-index: 9999;
   position: relative; }
   .navbar a {
     color: #8f8f8f;
-    font-size: 14px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 48px;
     margin-right: 20px;
     text-decoration: none;
     vertical-align: middle;
     cursor: pointer; }
+    @media screen and (max-width: 689px) {
+      .navbar a {
+        font-size: 15px; } }
     .navbar a.router-link-active {
-      color: #106cc8; }
+      color: #ed653c; }
 
 .header {
   background: url(../../assets/image/header.jpg) center;
   background-size: cover;
   height: 700px; }
+  @media screen and (max-width: 1000px) {
+    .header {
+      height: 50vw; } }
   .header .applat {
     width: 100%;
     height: 100%;
@@ -47,35 +66,67 @@ h2 {
           font-size: 50px;
           text-transform: uppercase;
           font-weight: bold; }
+          @media screen and (max-width: 630px) {
+            .header .applat .content p.nom {
+              font-size: 35px; } }
         .header .applat .content p.poste_1 {
           font-size: 34px;
           text-transform: uppercase;
           font-weight: 500;
           color: #ed653c; }
+          @media screen and (max-width: 630px) {
+            .header .applat .content p.poste_1 {
+              font-size: 25px; } }
         .header .applat .content p.poste_2 {
           font-size: 23px;
           text-transform: uppercase;
           font-weight: 500;
           color: #ed653c; }
+          @media screen and (max-width: 630px) {
+            .header .applat .content p.poste_2 {
+              font-size: 20px; } }
 
 .home .prestation {
   display: flex;
   padding: 50px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media screen and (max-width: 469px) {
+    .home .prestation {
+      padding: 50px 0; } }
   .home .prestation > .item {
     flex: 1;
+    min-width: 350px;
     max-width: 350px;
-    margin: 0 50px;
+    margin: 45px 50px;
     box-shadow: 5px 5px 20px 0 #b7b7b7; }
+    @media screen and (max-width: 1020px) {
+      .home .prestation > .item {
+        margin: 45px 10px; } }
+    @media screen and (max-width: 854px) {
+      .home .prestation > .item {
+        width: 100%;
+        max-width: inherit; } }
     .home .prestation > .item a {
       text-decoration: none;
       color: #2c2c2c; }
       .home .prestation > .item a .imager_container {
         border-bottom: 8px solid #ed653c; }
+        @media screen and (max-width: 854px) {
+          .home .prestation > .item a .imager_container {
+            height: 300px;
+            overflow: hidden; } }
         .home .prestation > .item a .imager_container img {
           width: 100%;
           height: 250px;
           vertical-align: bottom; }
+          @media screen and (max-width: 854px) {
+            .home .prestation > .item a .imager_container img {
+              height: auto; } }
+          @media screen and (max-width: 690px) {
+            .home .prestation > .item a .imager_container img {
+              height: 100%;
+              width: auto; } }
       .home .prestation > .item a .title_container {
         padding: 5px 15px; }
         .home .prestation > .item a .title_container h3 {
@@ -90,3 +141,111 @@ h2 {
           color: #2c2c2c;
           text-align: justify;
           line-height: 27px; }
+
+.home .article {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media screen and (max-width: 469px) {
+    .home .article {
+      padding: 50px 0; } }
+  .home .article .item {
+    flex: 1;
+    min-width: 350px;
+    max-width: 350px;
+    margin: 45px 50px;
+    box-shadow: 5px 5px 20px 0 #b7b7b7;
+    position: relative;
+    height: 234px;
+    overflow: hidden; }
+    @media screen and (max-width: 1020px) {
+      .home .article .item {
+        margin: 45px 10px; } }
+    @media screen and (max-width: 854px) {
+      .home .article .item {
+        width: 100%;
+        max-width: inherit; } }
+    .home .article .item .imager_container {
+      height: 100%; }
+      @media screen and (max-width: 854px) {
+        .home .article .item .imager_container {
+          height: 300px;
+          overflow: hidden; } }
+      .home .article .item .imager_container img {
+        height: 100%;
+        width: auto;
+        vertical-align: bottom; }
+        @media screen and (max-width: 854px) {
+          .home .article .item .imager_container img {
+            height: auto;
+            width: 100%; } }
+    .home .article .item a {
+      position: absolute;
+      top: 0;
+      background: rgba(237, 101, 76, 0.26);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-decoration: none;
+      color: white;
+      height: 0;
+      overflow: hidden;
+      transition: height 300ms; }
+      .home .article .item a .title_container {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase; }
+      .home .article .item a .description_container {
+        text-align: justify;
+        padding: 0 20px; }
+      .home .article .item a .btn-see-more {
+        background: transparent;
+        font-size: 35px;
+        margin-top: -5px;
+        height: 50px; }
+    .home .article .item:hover a {
+      height: 100%; }
+
+.footer {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  background: #ed653c; }
+  @media screen and (max-width: 689px) {
+    .footer {
+      flex-direction: column; } }
+  .footer > div {
+    flex: 1; }
+    @media screen and (max-width: 689px) {
+      .footer > div {
+        margin-bottom: 20px; } }
+    .footer > div.sitemap {
+      margin: 0 50px; }
+      @media screen and (max-width: 689px) {
+        .footer > div.sitemap {
+          margin-bottom: 20px; } }
+    .footer > div h4 {
+      margin: auto;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase; }
+    .footer > div ul {
+      margin: auto;
+      list-style: none;
+      text-align: center;
+      padding: 0; }
+      .footer > div ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px; }
+        .footer > div ul li a:hover {
+          color: white; }
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ed653c; }

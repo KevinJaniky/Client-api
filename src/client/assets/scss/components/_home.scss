@@ -3,24 +3,48 @@
     display: flex;
     padding: 50px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 469px) {
+      padding: 50px 0;
+    }
     > .item {
       flex: 1;
+      min-width: 350px;
       max-width: 350px;
-      margin: 0 50px;
+      margin: 45px 50px;
       box-shadow: 5px 5px 20px 0 #b7b7b7;
+
+      @media screen and (max-width: 1020px) {
+        margin: 45px 10px;
+      }
+      @media screen and (max-width: 854px) {
+        width:100%;
+        max-width: inherit;
+      }
       a {
         text-decoration: none;
         color: $black;
         .imager_container {
           border-bottom: 8px solid $color;
+          @media screen and (max-width: 854px) {
+            height:300px;
+            overflow: hidden;
+          }
 
           img {
             width: 100%;
             height: 250px;
             vertical-align: bottom;
+            @media screen and (max-width: 854px) {
+              height:auto;
+            }
+            @media screen and (max-width: 690px) {
+              height: 100%;
+              width: auto;
+            }
           }
         }
-        .title_container{
+        .title_container {
           padding: 5px 15px;
           h3 {
             text-transform: uppercase;
@@ -37,6 +61,83 @@
             text-align: justify;
             line-height: 27px;
           }
+        }
+      }
+    }
+  }
+  .article {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 469px) {
+      padding: 50px 0;
+    }
+    .item {
+      flex: 1;
+      min-width: 350px;
+      max-width: 350px;
+      margin: 45px 50px;
+      box-shadow: 5px 5px 20px 0 #b7b7b7;
+      position: relative;
+      height: 234px;
+      overflow: hidden;
+      @media screen and (max-width: 1020px) {
+        margin: 45px 10px;
+      }
+      @media screen and (max-width: 854px) {
+        width:100%;
+        max-width: inherit;
+      }
+      .imager_container {
+        height: 100%;
+
+        @media screen and (max-width: 854px) {
+          height:300px;
+          overflow: hidden;
+        }
+        img {
+          height: 100%;
+          width: auto;
+          vertical-align: bottom;
+          @media screen and (max-width: 854px) {
+            height:auto;
+            width: 100%;
+          }
+        }
+      }
+      a {
+        position: absolute;
+        top: 0;
+        background: $color_applat;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-decoration: none;
+        color: white;
+        height: 0;
+        overflow: hidden;
+        transition: height 300ms;
+
+        .title_container {
+          font-size: 20px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .description_container {
+          text-align: justify;
+          padding: 0 20px;
+        }
+        .btn-see-more {
+          background: transparent;
+          font-size: 35px;
+          margin-top: -5px;
+          height: 50px;
+        }
+      }
+      &:hover {
+        a {
+          height: 100%;
         }
       }
     }

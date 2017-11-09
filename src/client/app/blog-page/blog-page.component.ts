@@ -38,9 +38,7 @@ export class BlogPageComponent implements OnInit {
      * Get the names OnInit
      */
     ngOnInit() {
-        //this.api.get('/prestations?per_page=6').subscribe((data) => this.prestations = data);
-        //this.api.get('/posts?per_page=6').subscribe((data) => this.articles = data);
-        const id = +this.route.snapshot.paramMap.get('id');
+        const id = this.route.snapshot.paramMap.get('id');
         this.path = '/articles/'+id+'/';
 
 
