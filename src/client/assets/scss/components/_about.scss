@@ -1,0 +1,51 @@
+.about {
+  .people_about {
+    padding: 50px;
+    .content_caracteristique {
+      display: flex;
+      .photo_content {
+        flex: 1;
+        margin-right: 20px;
+        img {
+          width: 100%;
+        }
+      }
+      .caract_content {
+        flex: 2;
+        .who_content {
+          display: flex;
+          p {
+            margin: 0 7px 0 0;
+            font-size: 20px;
+            font-weight: bold;
+
+          }
+        }
+        .poste_content {
+          text-transform: uppercase;
+          font-size: 15px;
+          color: $color;
+          p {
+            font-weight: bold;
+          }
+        }
+        .description_content {
+          p {
+            font-size: 14px;
+            text-align: justify;
+            color: $black;
+          }
+        }
+      }
+    }
+    .item_savoir_faire_langage , .item_savoir_faire_adobe , .item_savoir_faire_autre{
+      display: flex;
+      .item_form{
+        padding:5px;
+        flex:1;
+        margin-right:10px;
+        background: $color;
+      }
+    }
+  }
+}

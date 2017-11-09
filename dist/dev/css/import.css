@@ -249,3 +249,38 @@ h2 {
   text-transform: uppercase;
   font-weight: 500;
   color: #ed653c; }
+
+.about .people_about {
+  padding: 50px; }
+  .about .people_about .content_caracteristique {
+    display: flex; }
+    .about .people_about .content_caracteristique .photo_content {
+      flex: 1;
+      margin-right: 20px; }
+      .about .people_about .content_caracteristique .photo_content img {
+        width: 100%; }
+    .about .people_about .content_caracteristique .caract_content {
+      flex: 2; }
+      .about .people_about .content_caracteristique .caract_content .who_content {
+        display: flex; }
+        .about .people_about .content_caracteristique .caract_content .who_content p {
+          margin: 0 7px 0 0;
+          font-size: 20px;
+          font-weight: bold; }
+      .about .people_about .content_caracteristique .caract_content .poste_content {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #ed653c; }
+        .about .people_about .content_caracteristique .caract_content .poste_content p {
+          font-weight: bold; }
+      .about .people_about .content_caracteristique .caract_content .description_content p {
+        font-size: 14px;
+        text-align: justify;
+        color: #2c2c2c; }
+  .about .people_about .item_savoir_faire_langage, .about .people_about .item_savoir_faire_adobe, .about .people_about .item_savoir_faire_autre {
+    display: flex; }
+    .about .people_about .item_savoir_faire_langage .item_form, .about .people_about .item_savoir_faire_adobe .item_form, .about .people_about .item_savoir_faire_autre .item_form {
+      padding: 5px;
+      flex: 1;
+      margin-right: 10px;
+      background: #ed653c; }

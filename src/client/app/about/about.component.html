@@ -1,3 +1,44 @@
-<ul>
-  <li *ngFor="let about of abouts">{{ about | json}}</li>
-</ul>
+<div class="about">
+    <h2>A propos de moi</h2>
+    <div class="people_about" *ngFor="let about of abouts">
+        <div class="content_caracteristique">
+            <div class="photo_content">
+                <img src="{{ about.img}}">
+            </div>
+            <div class="caract_content">
+                <div class="who_content">
+                    <p>{{ about.nom }}</p>
+                    <p>{{ about.prenom }}</p>
+                </div>
+                <div class="poste_content">
+                    <p>{{ about.poste }}</p>
+                </div>
+                <div class="description_content">
+                    <p>{{ about.content }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="item_savoir_faire_langage">
+            <div class="item Langage" *ngFor="let aboutitem of about.aboutitem">
+                <p  class="item_form" *ngIf="aboutitem.taxo=='Langage'">
+                    {{ aboutitem.title }}
+                </p>
+            </div>
+        </div>
+        <div class="item_savoir_faire_adobe">
+            <div class="item" *ngFor="let aboutitem of about.aboutitem">
+                <p  class="item_form" *ngIf="aboutitem.taxo=='Adobe'">
+                    {{ aboutitem.title }}
+                </p>
+            </div>
+        </div>
+        <div class="item_savoir_faire_autre">
+            <div class="item" *ngFor="let aboutitem of about.aboutitem">
+                <p   class="item_form" *ngIf="aboutitem.taxo=='Autre'">
+                    {{ aboutitem.title }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
