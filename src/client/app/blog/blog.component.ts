@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NameListService } from '../shared/name-list/name-list.service';
 import { ApiService } from '../shared/apiservices.module';
-
 /**
  * This class represents the lazy loaded HomeComponent.
  */

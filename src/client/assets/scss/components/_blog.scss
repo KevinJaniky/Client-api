@@ -1,0 +1,70 @@
+.blog {
+  padding: 50px;
+  .list {
+    margin: 20px auto;
+    max-width: 1000px;
+    .item {
+      margin-bottom: 25px;
+      box-shadow: 5px 5px 20px 0 #b7b7b7;
+      height: 250px;
+      @media screen and (max-width: 900px) {
+        height: 500px;
+        width: 400px;
+      }
+      a {
+        text-decoration: none;
+        display: flex;
+        color: $black;
+        height: 100%;
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
+        &:hover {
+          .container {
+            h3 {
+              color: $color;
+            }
+          }
+        }
+
+        .image_container {
+          overflow: hidden;
+          flex: 2;
+          img {
+            height: 100%;
+            width: auto;
+            vertical-align: bottom;
+          }
+        }
+        .container {
+          flex: 3;
+          padding: 15px;
+          position: relative;
+          h3 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 10px 0;
+          }
+          .content {
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+            margin-bottom: 7px;
+            padding: 10px 30px;
+          }
+          .taxo {
+            display: inline;
+            padding: 5px;
+            border: 1px solid $color;
+            color: $color;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
